@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/pgrilo92.github.io/replay-it-spotify/static/css/main.030873f3.chunk.css",
-    "main.js": "/pgrilo92.github.io/replay-it-spotify/static/js/main.4f150626.chunk.js",
-    "main.js.map": "/pgrilo92.github.io/replay-it-spotify/static/js/main.4f150626.chunk.js.map",
-    "runtime-main.js": "/pgrilo92.github.io/replay-it-spotify/static/js/runtime-main.1832e1d0.js",
-    "runtime-main.js.map": "/pgrilo92.github.io/replay-it-spotify/static/js/runtime-main.1832e1d0.js.map",
-    "static/js/2.2f42205c.chunk.js": "/pgrilo92.github.io/replay-it-spotify/static/js/2.2f42205c.chunk.js",
-    "static/js/2.2f42205c.chunk.js.map": "/pgrilo92.github.io/replay-it-spotify/static/js/2.2f42205c.chunk.js.map",
-    "index.html": "/pgrilo92.github.io/replay-it-spotify/index.html",
-    "precache-manifest.85a385a9654a5b4bbe2dcc7e06aaec85.js": "/pgrilo92.github.io/replay-it-spotify/precache-manifest.85a385a9654a5b4bbe2dcc7e06aaec85.js",
-    "service-worker.js": "/pgrilo92.github.io/replay-it-spotify/service-worker.js",
-    "static/css/main.030873f3.chunk.css.map": "/pgrilo92.github.io/replay-it-spotify/static/css/main.030873f3.chunk.css.map",
-    "static/js/2.2f42205c.chunk.js.LICENSE.txt": "/pgrilo92.github.io/replay-it-spotify/static/js/2.2f42205c.chunk.js.LICENSE.txt"
+    "main.css": "/replayit-spotify/static/css/main.030873f3.chunk.css",
+    "main.js": "/replayit-spotify/static/js/main.c65c1224.chunk.js",
+    "main.js.map": "/replayit-spotify/static/js/main.c65c1224.chunk.js.map",
+    "runtime-main.js": "/replayit-spotify/static/js/runtime-main.08033590.js",
+    "runtime-main.js.map": "/replayit-spotify/static/js/runtime-main.08033590.js.map",
+    "static/js/2.2f42205c.chunk.js": "/replayit-spotify/static/js/2.2f42205c.chunk.js",
+    "static/js/2.2f42205c.chunk.js.map": "/replayit-spotify/static/js/2.2f42205c.chunk.js.map",
+    "index.html": "/replayit-spotify/index.html",
+    "precache-manifest.d27de8e6181440fb9296986313a39917.js": "/replayit-spotify/precache-manifest.d27de8e6181440fb9296986313a39917.js",
+    "service-worker.js": "/replayit-spotify/service-worker.js",
+    "static/css/main.030873f3.chunk.css.map": "/replayit-spotify/static/css/main.030873f3.chunk.css.map",
+    "static/js/2.2f42205c.chunk.js.LICENSE.txt": "/replayit-spotify/static/js/2.2f42205c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1832e1d0.js",
+    "static/js/runtime-main.08033590.js",
     "static/js/2.2f42205c.chunk.js",
     "static/css/main.030873f3.chunk.css",
-    "static/js/main.4f150626.chunk.js"
+    "static/js/main.c65c1224.chunk.js"
   ]
 }
