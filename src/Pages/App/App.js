@@ -23,7 +23,6 @@ class App extends Component {
       items: [],
       user: null
     };
-    //this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
   }
   async componentDidMount() {
     // Set token

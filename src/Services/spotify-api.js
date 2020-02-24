@@ -24,40 +24,6 @@ export function profileInfo(token) {
         .then(res => res.json())
 }
 
-// function getAllPlaylists(token, trackList, data) {
-//     const playlistsUrl='https://api.spotify.com/v1/me/playlists'
-//     return fetch(playlistsUrl, 
-//         {
-//             method: "GET",
-//             headers: {
-//                 "Authorization": "Bearer " + token
-//             },
-//             mode: 'cors'
-//         })
-//         .then(res => { 
-//             let result = res.json()
-//             return result
-//         })
-//         .then((result)=> {
-//             console.log(result)
-//             let playlistObj = result.items
-//             console.log(playlistObj)
-//             playlistObj.forEach((playlist) => {
-//                 console.log(playlist)
-//                 if (playlist.name === data.name) return playlist
-//             })
-//         })
-//         .then( () => {
-//             trackList.map((tracks) => {
-//                 console.log(tracks)
-//                 let trackArr = []
-//                 trackArr.push(tracks.href)
-//                 console.log(tracks.href)
-//                 return trackArr
-//             })
-//         })
-//}
-
 function createArray(trackList) {
     let trackArr = []
     trackList.forEach((tracks) => trackArr.push(tracks.uri))

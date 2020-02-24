@@ -5,20 +5,7 @@ import PlaylistForm from '../../Components/PlaylistForm/PlaylistForm'
 
 const PlayList = (props) => {
 
-    // let handleSubmit =  (e) => {
-    //     e.preventDefault()
-    //     try {
-    //         [e.target.name] =  e.target.value
-    //         console.log(e.target.name)
-    //         console.log(e.target.value)
-
-    //         createPlaylist(props.user.id, props.token, [e.target.name] )
-    //     } catch (err) {
-    //         console.log('error on submit')
-    //     }
-    // }
     if(props.items.length < 1 && props.user===null) return <h2> No Props</h2>
-    //createPlaylist(props.user.id, props.token )
     return (
         <>
             <PlaylistForm user_id={props.user.id} token={props.token} trackList={props.items.items}/>
