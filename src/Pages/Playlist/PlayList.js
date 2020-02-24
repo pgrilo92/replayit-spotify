@@ -1,16 +1,27 @@
 import React from 'react'
 import './PlayList.css'
-import {createPlaylist} from './spotify-api'
+//import {createPlaylist} from '../../Services/spotify-api'
+import PlaylistForm from '../../Components/PlaylistForm/PlaylistForm' 
 
 const PlayList = (props) => {
+
+    // let handleSubmit =  (e) => {
+    //     e.preventDefault()
+    //     try {
+    //         [e.target.name] =  e.target.value
+    //         console.log(e.target.name)
+    //         console.log(e.target.value)
+
+    //         createPlaylist(props.user.id, props.token, [e.target.name] )
+    //     } catch (err) {
+    //         console.log('error on submit')
+    //     }
+    // }
     if(props.items.length < 1 && props.user===null) return <h2> No Props</h2>
-    createPlaylist(props.user.id, props.token )
+    //createPlaylist(props.user.id, props.token )
     return (
         <>
-            <form className="Create Playlist">
-                <input className="" type="text" name="playlist-name" />
-                <button className="btn btn-success playlist" onCLick={()=> createPlaylist(props.user.id, props.token )}>Create Playlist</button>
-            </form>
+            <PlaylistForm user_id={props.user.id} token={props.token} trackList={props.items.items}/>
             <div className="MostPlayed">
                 <ul className="list-group">
                 <h1 className='user-name'>{props.user.display_name} Favourite Tracks</h1>

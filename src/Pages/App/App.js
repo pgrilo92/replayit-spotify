@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { authEndpoint, clientId, redirectUri, scopes } from "./config";
-import hash from "./hash";
-import PlayList from "./PlayList";
-import {getTopPlayedSongs, profileInfo} from './spotify-api'
+import { authEndpoint, clientId, redirectUri, scopes } from "../../Services/config";
+import hash from "../../Services/hash";
+import PlayList from "../Playlist/PlayList";
+import {getTopPlayedSongs, profileInfo} from '../../Services/spotify-api'
 import "./App.css";
 
 class App extends Component {
