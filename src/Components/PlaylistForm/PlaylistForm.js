@@ -26,18 +26,28 @@ class PlaylistForm extends React.Component {
 
     render() {
         return(
-            <form className="Create Playlist" onSubmit={this.handleSubmit}>
-                <input className="form-group" 
-                    type="text" 
-                    name="name" 
-                    placeholder="Playlist name" 
-                    onChange={this.handleChange} />
-                <input className="form-group" 
-                    name="description" 
-                    placeholder="Description" 
-                    onChange={this.handleChange} />
-                <input className="btn btn-success playlist" type="submit" value="Create Playlist" />
-            </form>
+            <div className="row Create Playlist">
+                <form onSubmit={this.handleSubmit}>
+                    <div className="form-group col-12">
+                    <label for="name">Playlist Name</label>
+                        <input className="form-control" 
+                            type="text" 
+                            name="name" 
+                            placeholder="Playlist name" 
+                            onChange={this.handleChange} />
+                    </div>
+                    <div className="form-group col-12">
+                        <label for="description">Description</label>
+                        <input className="form-control" 
+                            name="description" 
+                            placeholder="Description" 
+                            onChange={this.handleChange} />
+                    </div>
+                    <div className="form-group col-12">
+                        <input className="btn btn-success playlist" type="submit" value="Create Playlist" />
+                    </div>
+                </form>
+            </div>
         )
     }
 }

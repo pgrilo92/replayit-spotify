@@ -1,3 +1,4 @@
+/*--- Load the top songs once page is uploaded ---*/
 export function getTopPlayedSongs(token) {
     const playlistUrl='https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=50'
     return fetch(playlistUrl, 
@@ -11,6 +12,7 @@ export function getTopPlayedSongs(token) {
         .then(res=> res.json())
 }
 
+/*--- get the user info from the api using the token ---*/
 export function profileInfo(token) {
     const profileUrl='https://api.spotify.com/v1/me'
     return fetch(profileUrl, 
@@ -24,18 +26,36 @@ export function profileInfo(token) {
         .then(res => res.json())
 }
 
+/*--- Request to get all playlists the user has ---*/
+// function getAllPlaylists(token, trackList, data) {
+//     const playlistsUrl='https://api.spotify.com/v1/me/playlists'
+//     return fetch(playlistsUrl, 
+//         {
+//             method: "GET",
+//             headers: {
+//                 "Authorization": "Bearer " + token
+//             },
+//             mode: 'cors'
+//         })
+//         .then(res => { 
+//             let result = res.json()
+//             return result
+//         })
+//}
+
+/*--- function used create an array for track lists using the URI's to be used on the body of the post request ---*/
 function createArray(trackList) {
     let trackArr = []
     trackList.forEach((tracks) => trackArr.push(tracks.uri))
-    console.log(trackArr)
     let uris = JSON.stringify(trackArr)
     return uris
 }
 
+/*--- Create Playlists ---*/
 export function createPlaylist(user_id, token, data, trackList) {
-
 	let playlistUrl = 'https://api.spotify.com/v1/users/' + user_id +
-		'/playlists';
+        '/playlists';
+/*--- Creates a playlist with a a name description chosen by user ---*/
 	return fetch(playlistUrl, {
 		method: 'POST',
 		body: JSON.stringify(data),
@@ -53,7 +73,7 @@ export function createPlaylist(user_id, token, data, trackList) {
         throw new Error('Bad Credentials!')
     })
     .then((createdList)=> {
-        console.log(createdList.id)
+/*--- Adds songs to the playlist created ---*/
         return fetch(`https://api.spotify.com/v1/playlists/${createdList.id}/tracks`, {
             method: 'POST',
             body: createArray(trackList),
