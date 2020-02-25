@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e5a40b996745d2fdfa73f0f94ae9309",
+    "revision": "ef36eb8bf56f399082d05ca1135df4ad",
     "url": "/replayit-spotify/index.html"
   },
   {
-    "revision": "b906ea82d90e67c867fa",
+    "revision": "652446407f0aac399552",
     "url": "/replayit-spotify/static/css/main.b4da094e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/replayit-spotify/static/js/2.2f42205c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b906ea82d90e67c867fa",
-    "url": "/replayit-spotify/static/js/main.0277931a.chunk.js"
+    "revision": "652446407f0aac399552",
+    "url": "/replayit-spotify/static/js/main.b629765a.chunk.js"
   },
   {
     "revision": "4df52be5dc84a82f0340",
