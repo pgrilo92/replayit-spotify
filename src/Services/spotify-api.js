@@ -26,23 +26,6 @@ export function profileInfo(token) {
         .then(res => res.json())
 }
 
-/*--- Request to get all playlists the user has ---*/
-// function getAllPlaylists(token, trackList, data) {
-//     const playlistsUrl='https://api.spotify.com/v1/me/playlists'
-//     return fetch(playlistsUrl, 
-//         {
-//             method: "GET",
-//             headers: {
-//                 "Authorization": "Bearer " + token
-//             },
-//             mode: 'cors'
-//         })
-//         .then(res => { 
-//             let result = res.json()
-//             return result
-//         })
-//}
-
 /*--- function used create an array for track lists using the URI's to be used on the body of the post request ---*/
 function createArray(trackList) {
     let trackArr = []
@@ -88,6 +71,6 @@ export function createPlaylist(user_id, token, data, trackList) {
     .then( res => {
             if (res.ok) return res.json()
             throw new Error('Bad Credentials!')
-        })
+        }).then()
     }
 

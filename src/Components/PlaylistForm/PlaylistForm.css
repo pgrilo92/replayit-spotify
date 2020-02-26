@@ -1,0 +1,6 @@
+.completionMessage {
+    visibility: hidden;
+}
+.completionMessageShow {
+    visibility: visible;
+}

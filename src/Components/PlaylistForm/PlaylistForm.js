@@ -7,18 +7,22 @@ class PlaylistForm extends React.Component {
         name: '',
         description: '',
         public: true,
+        showMessage: "completionMessage"
     }
 
     handleChange = (e) => {
         this.setState({
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
         })
     }
 
     handleSubmit =  async (e) => {
+        let data= {name:this.state.name, description: this.state.description, public: this.state.public}
+
         e.preventDefault()
         try {
-            await createPlaylist(this.props.user_id, this.props.token, this.state, this.props.trackList)
+            await createPlaylist(this.props.user_id, this.props.token, data, this.props.trackList)
+            this.setState({showMessage: "completionMessageShow"})
         } catch (err) {
             console.log('error on submit')
         }
@@ -26,6 +30,7 @@ class PlaylistForm extends React.Component {
 
     render() {
         return(
+            <>
             <div className="row Create Playlist">
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group col-12">
@@ -48,6 +53,11 @@ class PlaylistForm extends React.Component {
                     </div>
                 </form>
             </div>
+            <div className={this.state.showMessage}>
+                <p>Playlist {this.state.name} has been created </p>
+            </div>
+            </>
+            
         )
     }
 }

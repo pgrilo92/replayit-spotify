@@ -28,10 +28,7 @@ class App extends Component {
   async componentDidMount() {
     // Set token
     let _token = hash.access_token;
-    
-
     if (_token) {
-      // Set token
       const results = await getTopPlayedSongs(_token)
       const userInfo = await profileInfo(_token)
       this.setState({
