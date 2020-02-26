@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Route} from 'react-router-dom'
 import { authEndpoint, clientId, redirectUri, scopes } from "../../Services/config";
 import hash from "../../Services/hash";
 import PlayList from "../Playlist/PlayList";
@@ -44,35 +45,37 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
-          {(!this.state.token) ? 
-          (<>
-            <header className="App-header">
-              <h1>Replay.It</h1>
-            </header>
-            <div className="login">
-              <a
-                className="button login-btn"
-                href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-                  "%20"
-                )}&response_type=token&show_dialog=true`}
-              >
-                Login to Spotify
-              </a>
-            </div>
-            <footer>
-              Joaquim Grilo &copy;
-            </footer>
-          </>)       
-          : 
-          (<>
-            <PlayList 
-              items={this.state.items}
-              user={this.state.user}
-              token={this.state.token}
-            />
-          </>)
-          }
+        <Route path="/" render={(props)=> 
+            {return (!this.state.token) ? 
+            (<>
+              <header className="App-header">
+                <h1>Replay.It</h1>
+              </header>
+              <div className="login">
+                <a
+                  className="button login-btn"
+                  href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
+                    "%20"
+                  )}&response_type=token&show_dialog=true`}
+                >
+                  Login to Spotify
+                </a>
+              </div>
+              <footer>
+                Joaquim Grilo &copy;
+              </footer>
+            </>)       
+            : 
+            (<>
+              <PlayList 
+                items={this.state.items}
+                user={this.state.user}
+                token={this.state.token}
+                {...props}
+              />
+            </>)
+            }
+          } />
       </div>
     );
   }
