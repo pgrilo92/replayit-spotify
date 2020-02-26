@@ -6,7 +6,7 @@ class PlaylistForm extends React.Component {
     state = {
         name: '',
         description: '',
-        public: true
+        public: true,
     }
 
     handleChange = (e) => {
