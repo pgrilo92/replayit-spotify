@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/replayit-spotify/static/css/main.dac5ccbb.chunk.css",
-    "main.js": "/replayit-spotify/static/js/main.a1b0b919.chunk.js",
-    "main.js.map": "/replayit-spotify/static/js/main.a1b0b919.chunk.js.map",
+    "main.js": "/replayit-spotify/static/js/main.2009fdcc.chunk.js",
+    "main.js.map": "/replayit-spotify/static/js/main.2009fdcc.chunk.js.map",
     "runtime-main.js": "/replayit-spotify/static/js/runtime-main.08033590.js",
     "runtime-main.js.map": "/replayit-spotify/static/js/runtime-main.08033590.js.map",
     "static/js/2.9c221afe.chunk.js": "/replayit-spotify/static/js/2.9c221afe.chunk.js",
     "static/js/2.9c221afe.chunk.js.map": "/replayit-spotify/static/js/2.9c221afe.chunk.js.map",
     "index.html": "/replayit-spotify/index.html",
-    "precache-manifest.24c0b9dfff6219f0c7b0bd6587446536.js": "/replayit-spotify/precache-manifest.24c0b9dfff6219f0c7b0bd6587446536.js",
+    "precache-manifest.6a73184f5bf190603edf8f79b2441374.js": "/replayit-spotify/precache-manifest.6a73184f5bf190603edf8f79b2441374.js",
     "service-worker.js": "/replayit-spotify/service-worker.js",
     "static/css/main.dac5ccbb.chunk.css.map": "/replayit-spotify/static/css/main.dac5ccbb.chunk.css.map",
     "static/js/2.9c221afe.chunk.js.LICENSE.txt": "/replayit-spotify/static/js/2.9c221afe.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.08033590.js",
     "static/js/2.9c221afe.chunk.js",
     "static/css/main.dac5ccbb.chunk.css",
-    "static/js/main.a1b0b919.chunk.js"
+    "static/js/main.2009fdcc.chunk.js"
   ]
 }
