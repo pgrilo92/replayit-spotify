@@ -21,3 +21,4 @@
 
 * [Trello Link](https://trello.com/b/JrJI0CZt/replayit)
 * [ERD](https://www.lucidchart.com/documents/view/dc0e5aa2-f91d-4aa8-b180-91c9cbae6c51/0_0)
+* [Try the app here](https://pgrilo92.github.io/replayit-spotify/)
