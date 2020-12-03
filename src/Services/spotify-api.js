@@ -1,6 +1,6 @@
 /*--- Load the top songs once page is uploaded ---*/
 export function getTopPlayedSongs(token) {
-    const playlistUrl='https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=50'
+    const playlistUrl='https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=50'
     return fetch(playlistUrl, 
         {
             method: "GET",
